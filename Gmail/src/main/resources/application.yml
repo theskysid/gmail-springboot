@@ -1,0 +1,18 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+          ssl:
+            trust: smtp.gmail.com
+          socketFactory:
+            port: 587
+            class: javax.net.ssl.SSLSocketFactory
+        transport:
+          protocol: smtp
